@@ -9,5 +9,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: http://yfsoftcn.github.io/sitemap.xml
-Sitemap: http://yfsoftcn.github.io/baidusitemap.xml
+Sitemap: https://yfsoftcn.github.io/sitemap.xml
+Sitemap: https://yfsoftcn.github.io/baidusitemap.xml
