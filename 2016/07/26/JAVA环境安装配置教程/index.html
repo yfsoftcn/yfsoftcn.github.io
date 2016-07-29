@@ -84,13 +84,25 @@
   <div class="post-content">
     <header>
       
-      <time datetime="2016-07-29T04:43:56.000Z"><a href="/2016/07/29/JAVA环境安装配置教程/">Fri, Jul 29 2016, 12:43:56 pm</a></time>
+      <time datetime="2016-07-26T04:43:56.000Z"><a href="/2016/07/26/JAVA环境安装配置教程/">Tue, Jul 26 2016, 12:43:56 pm</a></time>
 
   
     <h1 class="title">JAVA环境安装配置教程</h1>
   
 
 
+  
+  <div class="categories">
+  	<i class="fa fa-folder-open"></i>
+    <a href="/categories/update/">update</a>
+  </div>
+
+
+  
+  <div class="tags">
+  	<i class="fa fa-tag"></i>
+    <a href="/tags/产品-介绍-工作流引擎-java-OA-activiti/">产品,介绍,工作流引擎,java,OA,activiti</a>
+  </div>
 
 <div class="clear"></div>
       
@@ -105,70 +117,9 @@
 </ul>
 <p><img src="http://upload-images.jianshu.io/upload_images/1449977-b920983e898e4c79.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安装文件列表"></p>
 <p>OK，材料已经准备完毕，接下来就可以进行环境的安装了！</p>
-<ul>
-<li><p>####安装 JDK</p>
-<p>1.双击打开jdk….exe<br><img src="http://upload-images.jianshu.io/upload_images/1449977-7ce5689313b823ce.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<p>2.这里可以选择你想安装到的位置，因为接下来会用到这个位置</p>
-</li>
-</ul>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-0058c0ae64f2b272.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="下一步"></p>
-<p>  比如我就会安装到其它盘符</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-c04d8c6710042cec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="D:\JDK1.8"></p>
-<p>3.然后各种下一步就能看到jdk正在安装</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-68c030b7b0bba863.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安装中"></p>
-<p>4.安装过程中提示需要安装JRE</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-712847a350228386.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="jre安装"><br>同样的，选择一个路径，然后下一步</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-11a3e9c26fa10a58.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="下一步"><br>接下来就能看到jdk装逼的画面啦</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-518f3f6c2df27e89.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="3 Billion"><br>接着就是坐等安装成功～</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-ea0ffe3d8cbf8ef9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ok"></p>
-<p>5.这步就比较重要了，设置环境变量</p>
-<p>到桌面<strong>右击</strong>［我的电脑］，选择［属性］</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-4e62315b0713c1a8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="高级系统设置"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-ac07ea19767ce39c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="环境变量"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-7256e7d38377fb69.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="新建变量"></p>
-<p>变量名：JAVA_HOME<br>变量值：[你的jdk目录]<br><img src="http://upload-images.jianshu.io/upload_images/1449977-20adf4cf7e5fed4d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="设置JAVA_HOME"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-56e81802fd7f40bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="确认保存"></p>
+<p>详细的安装步骤请跳转到这里(<a href="http://www.jianshu.com/p/73611f690eac" target="_blank" rel="external">http://www.jianshu.com/p/73611f690eac</a>)</p>
 <hr>
-<p>再新建一个变量<br>变量名：Classpath<br>变量值：.;％JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar<br><img src="http://upload-images.jianshu.io/upload_images/1449977-62a91b8c5986bea9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="将JDK的一些工具jar设置到classpath中"></p>
-<hr>
-<p>再新建一个变量,如果之前有，则在原有的基础上进行编辑，添加在最后即可<br>变量名：Path<br>变量值：%JAVA_HOME\bin;<br><img src="http://upload-images.jianshu.io/upload_images/1449977-5539080f9d9297e9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="设置环境变量Path"></p>
-<hr>
-<p>接下来就是见证成功的时刻<br>打开控制台输入命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">java -version</div></pre></td></tr></table></figure></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-3be7b15ee7c4c9de.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="java version"><br>如果输出上面的画面那就恭喜你jdk安装设置成功～</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">javac -version</div></pre></td></tr></table></figure>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-cb2ba16d6b875d88.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"><br>配置完全正确，jdk安装大功告成～</p>
-<ul>
-<li>####安装 tomcat<br>这就十分简单了，是一个压缩文件，直接解压就行了</li>
-</ul>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-cc73b138f271f4e7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="双击打开"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-d4bf7788051c0ac9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择解压"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-56b4a1cfc0cf773a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择解压目录"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-d19ef6ef479f8178.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="解压完成"></p>
-<p>接下来测试一下是否成功<br>打开 bin -&gt; startup.bat</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-1cb40ea12c25add2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="bin"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-1f6cfdda6d582448.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="startup.bat"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-822b6a9e56941bd4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="启动成功"></p>
-<p>接下来打开浏览器输入：<a href="http://localhost:8080" target="_blank" rel="external">http://localhost:8080</a></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-9a01d226945378e5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="localhost"><br>如果你能看到上面的画面就ok 了</p>
-<ul>
-<li>####安装 (wnmp)mysql</li>
-</ul>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-e0a1678b0e5265f8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="打开wnmp.png"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-259748ac8ad1e6d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="next"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-0dd6c25db2a22293.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="next"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-73447d16148d078b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="next"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-f98d90735de6b504.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="next"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-abd813c4bd206a08.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="install"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-fcbf051b0a6b4d5d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-6cc72d76d258d2ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="会给你自动安装32位的vc"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-7a56423161af8e38.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安装完成"></p>
-<p>这样mysql的环境就安装好了。<br>启动wnmp：</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-6826bea9fefa9ad0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>全是绿色的勾就表示启动成功<br><img src="http://upload-images.jianshu.io/upload_images/1449977-df550155136ad595.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<hr>
-<p>这时候，这里可能会出现一个问题（如果没有，则自动跳过）：</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1449977-28ffd58b96824682.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>不要慌张，这是因为 wnmp 默认安装了32位的vc，我们需要64位的vc<br>下载地址这里:<a href="https://pan.baidu.com/s/1b0fKEM" target="_blank" rel="external">https://pan.baidu.com/s/1b0fKEM</a><br><img src="http://upload-images.jianshu.io/upload_images/1449977-2404dcb2c670f383.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="打开vc x64"><br><img src="http://upload-images.jianshu.io/upload_images/1449977-d59943268777288d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><img src="http://upload-images.jianshu.io/upload_images/1449977-779e420a0a0f29f9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><img src="http://upload-images.jianshu.io/upload_images/1449977-ed70704a833f5cf8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<p>然后再重试打开wnmp ，启动服务，就不会有上面的错误啦～</p>
-<hr>
+<p>安装成功之后开始进行产品的部署和安装～</p>
 <p>尝试登陆：打开浏览器，输入：<a href="http://localhost/phpmyadmin" target="_blank" rel="external">http://localhost/phpmyadmin</a></p>
 <p><img src="http://upload-images.jianshu.io/upload_images/1449977-d44aea6c67dad5dc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="打开phpmyadmin"><br>看到这个画面就是安装成功</p>
 <p>输入用户名：root<br>输入密码：password    <strong>默认密码就是password</strong><br><img src="http://upload-images.jianshu.io/upload_images/1449977-36f8296e4c566e7e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="登陆"></p>
@@ -216,8 +167,8 @@
           <div class="clearfix"></div>
           <nav id="pagination">
   
+    <a href="/2016/07/28/产品说明/" class="alignleft prev"><i class="fa fa-long-arrow-left"></i>Next</a>
   
-    <a href="/2016/06/28/产品说明/" class="alignright next">Prev<i class="fa fa-long-arrow-right"></i></a>
   
   <div class="clearfix"></div>
 </nav>
@@ -229,11 +180,11 @@
 
 
 <section id="comment">
-  <h1 class="title">Kommentare</h1>
+  <h1 class="title">Comments</h1>
 
   
       <!-- Duoshuo Comment BEGIN -->
-<div class="ds-thread" data-thread-key="/2016/07/29/JAVA环境安装配置教程/"></div>
+<div class="ds-thread" data-thread-key="/2016/07/26/JAVA环境安装配置教程/"></div>
 <!-- Duoshuo Comment END -->
   
 </section>
